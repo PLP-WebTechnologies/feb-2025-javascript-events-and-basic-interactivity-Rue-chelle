@@ -2,41 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FitLife</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitLife - Health & Wellness</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>Welcome to FitLife</h1>
+    <p>Your guide to a healthier and more active lifestyle</p>
     <button id="ctaButton">Get Started</button>
+  </header>
 
-    <div class="tab-buttons">
-      <button class="tab-button" data-tab="1">Tips</button>
-      <button class="tab-button" data-tab="2">Workouts</button>
-      <button class="tab-button" data-tab="3">Nutrition</button>
+  <main>
+    <div class="tabs">
+      <button class="tab-button active-tab">🌿 Healthy Living</button>
+      <button class="tab-button">💪 Workout Tips</button>
+      <button class="tab-button">🥗 Nutrition Tips</button>
     </div>
 
-    <div id="tab1" class="tab-content active">Healthy living tips here!</div>
-    <div id="tab2" class="tab-content">Workout plans go here!</div>
-    <div id="tab3" class="tab-content">Nutrition info goes here!</div>
-
-    <div class="gallery">
-      <img id="mainImage" src="img1.jpg" alt="Main View" />
-      <div class="thumbnails">
-        <img src="img1.jpg" alt="Thumb 1" />
-        <img src="img2.jpg" alt="Thumb 2" />
-        <img src="img3.jpg" alt="Thumb 3" />
-      </div>
+    <div id="tab1" class="tab-content active">
+      <h2>Healthy Living Tips</h2>
+      <ul class="tips-list">
+        <li><strong>Stay Hydrated:</strong> Drink at least 8 glasses of water daily.</li>
+        <li><strong>Eat a Balanced Diet:</strong> Include veggies, fruits, and whole foods.</li>
+        <li><strong>Move Daily:</strong> Aim for 30 minutes of activity every day.</li>
+        <li><strong>Get Enough Sleep:</strong> Try to sleep 7–9 hours every night.</li>
+        <li><strong>Practice Mindfulness:</strong> Take time to relax and breathe.</li>
+        <li><strong>Limit Sugar:</strong> Cut down on processed and sugary foods.</li>
+        <li><strong>Stay Consistent:</strong> Small daily actions lead to lasting results.</li>
+      </ul>
+      
+    </div>
+      
+    <div id="tab2" class="tab-content">
+      <h2>Workout Tips</h2>
+      <ul class="tips-list">
+        <li><strong>Start Slow:</strong> Gradually increase workout intensity.</li>
+        <li><strong>Warm Up:</strong> Always stretch and warm up before exercise.</li>
+        <li><strong>Mix It Up:</strong> Combine cardio, strength, and flexibility exercises.</li>
+        <li><strong>Use Proper Form:</strong> Prevent injuries by using correct posture.</li>
+        <li><strong>Rest Days Matter:</strong> Give your muscles time to recover.</li>
+        <li><strong>Stay Consistent:</strong> Schedule workouts like appointments.</li>
+      </ul>
     </div>
 
-    <form id="signupForm">
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="password" id="password" placeholder="Password" required />
-      <button type="submit">Join Now</button>
-    </form>
+    <div id="tab3" class="tab-content">
+      <h2>Nutrition Tips</h2>
+      <ul class="tips-list">
+        <li><strong>Eat Real Food:</strong> Choose whole foods over processed ones.</li>
+        <li><strong>Portion Control:</strong> Listen to your hunger and fullness cues.</li>
+        <li><strong>Protein Power:</strong> Include protein in every meal to stay full.</li>
+        <li><strong>Healthy Fats:</strong> Avocados, nuts, and olive oil are great.</li>
+        <li><strong>Read Labels:</strong> Avoid hidden sugars and high sodium.</li>
+        <li><strong>Don't Skip Meals:</strong> Keeps energy stable throughout the day.</li>
+      </ul>
+    </div>
+
+
+   
+  <!-- Main Image Section -->
+  <div id="mainImage">
+    <h3> Gallery: Healthy lifestyle inspiration</h3> 
+    <img src="https://media.istockphoto.com/id/2027278927/photo/young-athletic-woman-exercising-with-barbell-during-sports-training-in-a-gym.jpg?s=612x612&w=0&k=20&c=ifFL7Mqc8NwTj25PAx4ONy1OOQZvc1S_kVOofsbLgFw="alt="Main Image" id="mainImg">
   </div>
+    <!-- Thumbnail Section -->
+<div class="gallery">
+    <img src="https://media.istockphoto.com/id/1074959548/photo/beautiful-attractive-asian-woman-practice-yoga-lotus-pose-on-the-pool-above-the-mountain-peak.jpg?s=612x612&w=0&k=20&c=BkoQJJ_GyeXMPXnahQWtnhObFCVxWCuenUznnU3emAI=" alt="Image 1" class="thumb" id="thumb1">
+    <img src="https://media.istockphoto.com/id/619088796/photo/fitness-girl-lifting-dumbbell-in-the-morning.jpg?s=612x612&w=0&k=20&c=m8gUYPVV1ZfWpfjrKjzWn-a8DVHnw1hGp-rjh6c40f0=" alt="Image 2" class="thumb" id="thumb2">
+    <img src="https://media.istockphoto.com/id/1500051695/photo/athletic-woman-eating-a-healthy-bowl-of-muesli-with-fruit-sitting-on-floor-in-the-kitchen-at.jpg?s=612x612&w=0&k=20&c=ewWO1mH-L-kJLSeEcVImTNqsZbfjbyqyyvBmp-Q2bEc=" alt="Image 3" class="thumb" id="thumb3">
+    <img src="https://media.istockphoto.com/id/1157343333/photo/ooo-i-can-definitely-feel-that.jpg?s=612x612&w=0&k=20&c=enujGK_G79nouRZdneq04S35zyvifwDL-bshnDe6N5Y=" alt="Image 3" class="thumb" id="thumb3">
+  </div>
+ 
+
+    <section class="form-section">
+      <h2>Join Our Community</h2>
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit">Sign Up</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy;</span> FitLife. Stay active. Stay healthy.</p>
+  
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

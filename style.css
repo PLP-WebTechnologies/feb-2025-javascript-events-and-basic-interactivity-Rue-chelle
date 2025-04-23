@@ -1,2 +1,171 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #28a745;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  #ctaButton {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: white;
+    color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #ctaButton:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .tab-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .active-tab {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 1rem 2rem;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .tips-list {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+  }
+  
+  .tips-list li {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+  }
+   /* Gallery */
+   .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .thumb {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumb:hover {
+    transform: scale(1.1);
+  }
+  
+  #mainImage {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  #mainImage img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+  
+  /* Form */
+  .form-section {
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .form-section form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section input, .form-section button {
+    padding: 10px;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .form-section button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  /* footer */
+  .footer {
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+  }
+  
 
   
+  @media (max-width: 600px) {
+    .tabs {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .tab-button {
+      margin: 0.5rem 0;
+      width: 90%;
+    }
+  
+    .tab-content {
+      padding: 1rem;
+    }
+  }
